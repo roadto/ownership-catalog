@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ownership-catalog-microservice
+  datasource:
+    url: jdbc:mysql://localhost:3306/ownership_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: toor
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+   active: local, mysql
+
+info.app:
+  name: ownership-service
+  description: Ownership service
+  version: 1.0.0
